@@ -15,9 +15,6 @@ body{
 }
 
 
-
-
-
 h2{
     font-size: 60px;
     margin: 10px;
@@ -35,7 +32,6 @@ h2{
 }
 
 img{
-    border: solid 15px ;
     width: 40%;
     height: 60%;
     margin: 20px;
@@ -63,4 +59,21 @@ input[type="range"]::-webkit-slider-thumb{
     border-radius:50%;
     transition:.2s; 
     margin-left: 3px;      
+  }
+
+
+  :root{
+      --base: #FFAAAA;
+      --spacing: 10px;
+      --blur: 10px;
+  }
+
+  img{
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+  }
+
+  .h1{
+      color: var(--base);
   }
