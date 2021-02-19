@@ -40,3 +40,27 @@ img{
     height: 60%;
     margin: 20px;
 }
+
+input[type="range"] {
+    appearance: none;
+    width: 200px;
+    height: 18px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgb(206, 233, 233);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(153, 168, 166);
+    border-image: initial;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    position: relative;  
+    width:12px;
+    height:12px;
+    background:rgb(226, 177, 177);
+    border-radius:50%;
+    transition:.2s; 
+    margin-left: 3px;      
+  }
